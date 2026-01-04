@@ -25,10 +25,12 @@ jobs:
           cache: pnpm
           registry-url: "https://registry.npmjs.org"
 
+      - run: npm i -g npm@latest
+      - run: node -v && npm -v && pnpm -v
+
       - run: pnpm i --frozen-lockfile
       - run: pnpm test
       - run: pnpm lint
       - run: pnpm build
 
-      - name: Publish
-        run: npm publish --access public --provenance
+      - run: npm publish --access public --provenance
