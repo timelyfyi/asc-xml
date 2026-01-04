@@ -18,10 +18,11 @@ export const asNumber = (value: unknown): number | undefined => {
   return Number.isFinite(num) ? num : undefined;
 };
 
-export const pickString = (node: Record<string, unknown> | undefined, keys: string[]): string | undefined => {
-  if (!node) return undefined;
+export const pickString = (node: unknown, keys: string[]): string | undefined => {
+  if (!node || typeof node !== "object" || Array.isArray(node)) return undefined;
+  const rec = node as Record<string, unknown>;
   for (const key of keys) {
-    const v = asString((node as Record<string, unknown>)[key]);
+    const v = asString(rec[key]);
     if (v !== undefined) return v;
   }
   return undefined;
