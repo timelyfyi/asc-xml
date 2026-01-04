@@ -1,6 +1,6 @@
 {
   "name": "@timelyfyi/asc-xml",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Parse ASC timetable XML exports into a typed JSON model.",
   "type": "module",
   "main": "dist/index.js",
