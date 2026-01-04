@@ -23,6 +23,10 @@
   ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timelyfyi/asc-xml"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
