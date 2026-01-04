@@ -1,0 +1,62 @@
+<asc>
+  <meta>
+    <source>ASC</source>
+    <generatedAt>2024-09-01T12:00:00Z</generatedAt>
+    <version>1.0</version>
+  </meta>
+  <timetable>
+    <rooms>
+      <room>
+        <id>R1</id>
+        <name>Room 1</name>
+      </room>
+    </rooms>
+    <teachers>
+      <teacher>
+        <id>T1</id>
+        <name>Alice Smith</name>
+        <short>AS</short>
+      </teacher>
+    </teachers>
+    <classes>
+      <class>
+        <id>C1</id>
+        <name>Class 1</name>
+      </class>
+    </classes>
+    <subjects>
+      <subject>
+        <id>S1</id>
+        <name>Math</name>
+        <short>MA</short>
+      </subject>
+    </subjects>
+    <periods>
+      <period>
+        <id>P1</id>
+        <index>1</index>
+        <start>08:00</start>
+        <end>08:45</end>
+      </period>
+    </periods>
+    <lessons>
+      <lesson>
+        <id>L1</id>
+        <day>1</day>
+        <period>1</period>
+        <subjectId>S1</subjectId>
+        <teacherIds>
+          <id>T1</id>
+        </teacherIds>
+        <classIds>
+          <id>C1</id>
+        </classIds>
+        <roomIds>
+          <id>R1</id>
+        </roomIds>
+        <start>2024-09-02T08:00:00Z</start>
+        <end>2024-09-02T08:45:00Z</end>
+      </lesson>
+    </lessons>
+  </timetable>
+</asc>
